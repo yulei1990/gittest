@@ -1,17 +1,21 @@
 pipeline {
-  agent any
-  stages {
-    stage('before') {
-      steps {
-        echo 'hello world test2'
-      }
-    }
+    agent any
 
-    stage('after') {
-      steps {
-        echo 'test ok'
-      }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
-
-  }
 }
