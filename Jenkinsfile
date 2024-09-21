@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('before') {
           steps {
-            echo 'hello world hahahahaha'
+            echo 'hello world test2'
           }
         }
 
